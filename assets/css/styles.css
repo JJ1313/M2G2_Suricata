@@ -34,11 +34,57 @@ body {
   }
 }
 
-main.container {
-  outline: 1px solid red;
-  margin-top: 139px;
+#products-section {
+  padding-block: 8.5rem;
+
+
+  & h2 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--clr-tone-3);
+  }
+
+  & .card {
+    margin-inline: auto;
+
+    & .card-title {
+      font-weight: bold;
+    }
+
+    & .card-text {
+      /* font-weight: normal; */
+      max-height: 3em;
+      overflow: hidden;
+    }
+
+    & .card-link {
+      font-size: 0.7rem;
+      line-height: 1rem;
+    }
+
+    & .list-group-item {
+      font-size: 0.7rem;
+      line-height: 15px;
+    }
+
+  }
 }
 
-h2 {
-  font-size: 35px;
+#payments-section {
+  background-color: var(--clr-secondary);
+  min-height: 11rem;
+  color: var(--clr-tone-5);
+  gap: 4.5rem;
+
+  & h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  & .icons-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+  }
 }
