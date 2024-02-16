@@ -7,9 +7,9 @@
   --clr-tone-4: #ddd;
   --clr-tone-5: #fff;
 
-  --clr-primary: #E83E8C;
-  --clr-secondary: #17A2B8;
-  --clr-link: #1C7CD5;
+  --clr-pink: #e83e8c;
+  --clr-info: #17A2B8;
+  /* --clr-link: #1C7CD5; */
 }
 
 *,
@@ -26,7 +26,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-pink);
 
   & a {
     color: var(--clr-tone-5);
@@ -40,7 +40,7 @@ body {
 
   & h2 {
     font-size: 3.75rem;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: capitalize;
     color: var(--clr-tone-3);
   }
@@ -49,11 +49,10 @@ body {
     margin-inline: auto;
 
     & .card-title {
-      font-weight: bold;
+      font-weight: 700;
     }
 
     & .card-text {
-      /* font-weight: normal; */
       max-height: 3em;
       overflow: hidden;
     }
@@ -72,13 +71,13 @@ body {
 }
 
 #payments-section {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-info);
   min-height: 11rem;
   color: var(--clr-tone-5);
   gap: 4.5rem;
 
   & h3 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2.5rem;
   }
 
@@ -86,5 +85,15 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1.75rem;
+  }
+}
+
+#suricata-section {
+  background-color: var(--clr-pink);
+  min-height: 11rem;
+
+  & img {
+    width: 3.3rem;
+    height: 6.25rem;
   }
 }
